@@ -1,1 +1,3 @@
-Deno.serve(() => new Response("Hello, world!v erf"));
+Deno.serve((_request: Request) => {
+    return new Response("Hello, world!");
+  });
